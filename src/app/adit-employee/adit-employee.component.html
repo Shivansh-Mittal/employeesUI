@@ -1,0 +1,39 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 fw-bold text-primary">{{model.employeeId?'Edit Employee':'Add Employee'}}</p>
+            <p class="fst-italic">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio libero dolores qui error tempora vitae ducimus earum dolorem quam velit amet, rerum distinctio nulla officia ipsum cumque iusto quia numquam!
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Create Contact Form -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+                <div class="mb-2">
+                    <label class="ms-1 fw-bold">Name</label>
+                    <input type="text" class="form-control" placeholder="Name" [(ngModel)]="model.employeeName" [ngModelOptions]="{standalone: true}" />
+                </div>
+                <div class="mb-2">
+                    <label class="ms-1 fw-bold">Department</label>
+                    <input type="text" class="form-control" placeholder="Department" [(ngModel)]="model.department" [ngModelOptions]="{standalone: true}" />
+                </div>
+                <div class="mb-2">
+                    <label class="ms-1 fw-bold">Date Of Joining</label>
+                    <input type="date" class="form-control" placeholder="Date Of Joining" [(ngModel)]="model.dateOfJoining" [ngModelOptions]="{standalone: true}" />
+                </div>
+                <div class="mb-2">
+                    <input type="submit" class="btn btn-primary" value="Create">
+                    <a routerLink="/employee-list" class="btn btn-dark ms-2">Close</a>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-4">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg" alt="" class="contact-image" />
+        </div>
+    </div>
+</div>
