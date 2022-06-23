@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=Source+Sans+Pro:ital,wght@0,200;1,300;1,400&family=Ubuntu:wght@300&display=swap');
+body {
+    font-family: 'Ubuntu', sans-serif !important;
+    background-color: #e7effc !important
+}
+
+.contact-image {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.contact-image-big {
+    width: 200px;
+    border-radius: 50%;
+}
