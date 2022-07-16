@@ -14,6 +14,7 @@ import { AditEmployeeComponent } from './adit-employee/adit-employee.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MsgService } from './shared/services/msg.service';
+import { ErmFormsComponent } from './erm-forms/erm-forms.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { MsgService } from './shared/services/msg.service';
     EmployeesListComponent,
     AditEmployeeComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ErmFormsComponent
   ],
   imports: [
     BrowserModule,
