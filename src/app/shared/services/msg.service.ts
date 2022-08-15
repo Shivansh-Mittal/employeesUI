@@ -4,9 +4,12 @@ import { MessageService } from 'primeng/api';
 @Injectable({
   providedIn: 'root'
 })
+
 export class MsgService {
 
-  constructor( private messageService: MessageService) { }
+  constructor( 
+    private messageService: MessageService
+  ) { }
 
   success(msg: string, title: string = 'Success'){
     this.add('success', title, msg);
@@ -28,4 +31,5 @@ export class MsgService {
   clear(){
     this.messageService.clear();
   }
+
 }

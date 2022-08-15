@@ -7,16 +7,22 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'employee-list', component: EmployeesListComponent},
-  {path: 'add-employee', component: AditEmployeeComponent},
-  {path: 'edit-employee/:id', component: AditEmployeeComponent},
+
+  { path: '', component: HomeComponent  },
+  
+  { path: 'employee-list', component: EmployeesListComponent  },
+  { path: 'add-employee', component: AditEmployeeComponent  },
+  { path: 'edit-employee/:id', component: AditEmployeeComponent },
+  
   { path:'erm-form', component: ErmFormsComponent },
+  
   { path: '**', component: PageNotFoundComponent },
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
