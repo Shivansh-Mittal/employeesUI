@@ -12,10 +12,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { EmployeesListComponent } from './employees-list/employees-list.component';
 import { AditEmployeeComponent } from './adit-employee/adit-employee.component';
-import { ErmFormsComponent } from './erm-forms/erm-forms.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MsgService } from './shared/services/msg.service';
-
 
 @NgModule({
   declarations: [
@@ -25,7 +23,6 @@ import { MsgService } from './shared/services/msg.service';
     HomeComponent,
     EmployeesListComponent,
     AditEmployeeComponent,
-    ErmFormsComponent,
     PageNotFoundComponent,
   ],
   imports: [
