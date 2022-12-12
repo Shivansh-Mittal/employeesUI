@@ -11,7 +11,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Search User" />
+                                <input #box type="text" (keydown)="mycall(box.value)" (mouseleave)="mycall('lol')" class="form-control" placeholder="Search User" />
                             </div>
                             <div class="col">
                                 <input type="submit" class="btn btn-outline-dark" value="Search" />
