@@ -36,6 +36,10 @@ export class EmployeesListComponent implements OnInit {
     this.router.navigate(['edit-employee',id]);
   }
 
+  mycall(input: any){
+    console.error(input);
+  }
+
   onDelete(number: any) {
     this.employees.deleteUsers(number).subscribe(res => {
       alert("Deleted employee "+ number);
