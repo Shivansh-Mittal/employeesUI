@@ -14,7 +14,7 @@ export class EmployeeService {
 
   getUsers() {
     // let options = {};
-    return this.http.get(this.employee);
+    return this.http.get(`${this.employee}get`);
   }
   getUserById(id: number){
     return this.http.get(`${this.employee}${id}`);
