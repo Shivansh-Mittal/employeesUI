@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class EmployeeService {
 
-  employee = 'https://localhost:7077/api/Employee/';
+  employee = 'https://employees-api-inferno.vercel.app/employee/';
 
   constructor(
     private http: HttpClient
